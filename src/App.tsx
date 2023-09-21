@@ -18,7 +18,7 @@ const App = () => {
           <div className="">
             <div className="text-4xl mb-5">Hello World 👋.</div>
             <div className="text-xl leading-relaxed mb-5">I'm <NLink>Niranjan Devasani.</NLink> a tech enthusiast with a diverse skill set. I specialize in developing web and mobile applications, ensuring seamless user experiences. As a Cloud and DevOps Engineer, I optimize applications for scalability and reliability in the cloud. I'm also passionate about open source, actively contributing to the community. Most notably, I'm the creator of <a href="https://nayanui.com" target="_blank" className="text-primary">Nayan UI</a>, a dynamic and innovative user interface that's setting new standards in design and functionality. 🔥</div>
-            <div className="flex flex-row mb-5">
+            <div className="flex flex-row mb-6">
               <a href="https://github.com/ursnj" target="_blank" className="bg-gray-500 hover:bg-gray-600 text-white p-3 rounded-full cursor-pointer mr-3" tabIndex={0} title="Niranjan Devasani Github"><Github className="w-5 h-5" /></a>
               <a href="https://www.linkedin.com/in/ursnj/" target="_blank" className="bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full cursor-pointer mr-3" tabIndex={0} title="Niranjan Devasani Linkedin"><Linkedin className="w-5 h-5" /></a>
               <a href="https://twitter.com/ursNjn" target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full cursor-pointer mr-3" tabIndex={0} title="Niranjan Devasani Twitter"><Twitter className="w-5 h-5" /></a>
