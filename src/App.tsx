@@ -8,6 +8,7 @@ const App = () => {
   const toggleTheme = () => {
     setTheme(theme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK);
   };
+
   return (
     <NTheme theme={theme}>
     <div className="h-screen w-screen items-center">
