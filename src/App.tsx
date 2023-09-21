@@ -15,7 +15,7 @@ const App = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
         <div className="flex items-center">
         <div className="p-5">
-          <div className="text-4xl mb-5">Hello Guys 👋.</div>
+          <div className="text-4xl mb-5">Hello World 👋.</div>
           <div className="text-xl leading-relaxed mb-5">I'm <NLink>Niranjan Devasani.</NLink> Web and Mobile application developer, Cloud and Devops Engineer, Opensource Contributor and Creator of <a href="https://nayanui.com" target="_blank" className="text-primary">Nayan UI 🔥</a>.</div>
           <div className="flex flex-row">
 

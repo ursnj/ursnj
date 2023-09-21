@@ -29,6 +29,10 @@
 
     body {
         color: var(--COLOR_TEXT) !important;
-        background-color: var(--COLOR_BACKGROUND) !important;
+        background-color: var(--COLOR_CARD) !important;
+        font-family: arial,sans-serif!important;
+        overflow-x: hidden!important;
+        -webkit-font-smoothing: antialiased!important;
+        -moz-osx-font-smoothing: grayscale!important;
     }
 }
