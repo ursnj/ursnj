@@ -24,9 +24,9 @@ const BannerInfo = () => {
         <NButton className="mr-3">PROJECTS</NButton>
         <a href={`${window.location.href}niranjan-devasani-resume.pdf`} target="_blank"><NButton>RESUME</NButton></a>
         <span tabIndex={0} className="cursor-pointer ml-4" onClick={toggleTheme} title="Theme Switch">
-                    {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
+          {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
           {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
-                  </span>
+        </span>
       </div>
     </div>
   );
