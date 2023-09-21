@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Github, Linkedin, Mail, MoonStar, Phone, Sun, Twitter } from "lucide-react";
-import { NButton, NLink, THEMES, useLocalStorage } from "nayan";
+import { NButton, NDialog, NLink, Size, THEMES, useLocalStorage } from "nayan";
+import Details from "./Details";
+import Projects from "./Projects";
 
 const BannerInfo = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -13,6 +15,12 @@ const BannerInfo = () => {
 
   return (
     <div>
+      <NDialog isOpen={showDetails} closeModal={() => setShowDetails(false)} size={Size.MD} title="More Details">
+        <Details />
+      </NDialog>
+      <NDialog isOpen={showProjects} closeModal={() => setShowProjects(false)} size={Size.MD} title="Projects">
+        <Projects />
+      </NDialog>
       <div className="text-4xl mb-5">Hello World 👋.</div>
       <div className="text-xl leading-relaxed mb-5">I'm <NLink>Niranjan Devasani.</NLink> a tech enthusiast with a diverse skill set. I specialize in developing web and mobile applications, ensuring seamless user experiences. As a Cloud and DevOps Engineer, I optimize applications for scalability and reliability in the cloud. I'm also passionate about open source, actively contributing to the community. Most notably, I'm the creator of <a href="https://nayanui.com" target="_blank" className="text-primary">Nayan UI</a>, a dynamic and innovative user interface that's setting new standards in design and functionality. 🔥</div>
       <div className="flex flex-row mb-6">
@@ -23,9 +31,9 @@ const BannerInfo = () => {
         <a href="tel:+917676677541" target="_blank" className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full cursor-pointer mr-3" tabIndex={0} title="Niranjan Devasani Mobile"><Phone className="w-5 h-5" /></a>
       </div>
       <div className="flex flex-row items-center">
-        <NButton className="mr-3">DETAILS</NButton>
-        <NButton className="mr-3">PROJECTS</NButton>
-        <a href={`${window.location.href}niranjan-devasani-resume.pdf`} target="_blank"><NButton>RESUME</NButton></a>
+        <NButton className="mr-3" onClick={() => setShowDetails(true)}>DETAILS</NButton>
+        <NButton className="mr-3" onClick={() => setShowProjects(true)}>PROJECTS</NButton>
+        <NButton onClick={() => window.open(`${window.location.href}niranjan-devasani-resume.pdf`)}>RESUME</NButton>
         <span tabIndex={0} className="cursor-pointer ml-4" onClick={toggleTheme} title="Theme Switch">
           {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
           {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
