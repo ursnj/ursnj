@@ -35,4 +35,26 @@
         -webkit-font-smoothing: antialiased!important;
         -moz-osx-font-smoothing: grayscale!important;
     }
+
+    /* width */
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        border-radius: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--COLOR_BORDER);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: gray;
+    }
 }

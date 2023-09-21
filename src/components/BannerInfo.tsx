@@ -33,10 +33,10 @@ const BannerInfo = () => {
       <div className="flex flex-row items-center">
         <NButton className="mr-3" onClick={() => setShowDetails(true)}>DETAILS</NButton>
         <NButton className="mr-3" onClick={() => setShowProjects(true)}>PROJECTS</NButton>
-        <NButton onClick={() => window.open(`${window.location.href}niranjan-devasani-resume.pdf`)}>RESUME</NButton>
-        <span tabIndex={0} className="cursor-pointer ml-4" onClick={toggleTheme} title="Theme Switch">
-          {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
-          {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
+        <NButton className="mr-2" onClick={() => window.open(`${window.location.href}niranjan-devasani-resume.pdf`)}>RESUME</NButton>
+        <span tabIndex={0} className="cursor-pointer" onClick={toggleTheme} title="Theme Switch">
+          {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 m-2 text-text inline" />}
+          {theme === THEMES.DARK && <Sun className="w-6 h-6 m-2 text-text inline" />}
         </span>
       </div>
     </div>
