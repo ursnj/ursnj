@@ -1,7 +1,10 @@
-import {NButton, NLink, THEMES, useLocalStorage} from "nayan";
-import {Github, Linkedin, Mail, MoonStar, Phone, Sun, Twitter} from "lucide-react";
+import { useState } from "react";
+import { Github, Linkedin, Mail, MoonStar, Phone, Sun, Twitter } from "lucide-react";
+import { NButton, NLink, THEMES, useLocalStorage } from "nayan";
 
 const BannerInfo = () => {
+  const [showDetails, setShowDetails] = useState(false);
+  const [showProjects, setShowProjects] = useState(false);
   const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
 
   const toggleTheme = () => {

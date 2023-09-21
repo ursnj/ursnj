@@ -1,6 +1,6 @@
 import { NTheme, useLocalStorage, THEMES } from 'nayan';
 import BannerImage from "./components/BannerImage";
-import BannerInfo from "./components/BannerImage";
+import BannerInfo from "./components/BannerInfo";
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
