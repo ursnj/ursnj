@@ -1,4 +1,4 @@
-import {NLink, NButton, NTheme, useLocalStorage, THEMES} from 'nayan';
+import { NLink, NButton, NTheme, useLocalStorage, THEMES } from 'nayan';
 import { MoonStar, Sun, Github, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
 import Banner from "./components/Banner";
 
