@@ -12,7 +12,7 @@ const App = () => {
   return (
     <NTheme theme={theme}>
     <div className="h-screen w-screen items-center">
-      <div className="container mx-auto p-5 h-full">
+      <div className="container mx-auto p-3 h-full">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-full">
         <div className="flex items-center col-span-1 lg:col-span-2">
           <div className="">
@@ -26,7 +26,9 @@ const App = () => {
               <a href="tel:+917676677541" target="_blank" className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full cursor-pointer mr-3" tabIndex={0} title="Niranjan Devasani Mobile"><Phone className="w-5 h-5" /></a>
             </div>
             <div className="flex flex-row items-center">
-              <a href={`${window.location.href}niranjan-devasani-resume.pdf`} target="_blank"><NButton>MY RESUME</NButton></a>
+              <NButton className="mr-3">DETAILS</NButton>
+              <NButton className="mr-3">PROJECTS</NButton>
+              <a href={`${window.location.href}niranjan-devasani-resume.pdf`} target="_blank"><NButton>RESUME</NButton></a>
               <span tabIndex={0} className="cursor-pointer ml-4" onClick={toggleTheme} title="Theme Switch">
                 {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
                 {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
