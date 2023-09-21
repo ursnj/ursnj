@@ -28,12 +28,12 @@
     }
 
     body {
-        color: var(--COLOR_TEXT) !important;
-        background-color: var(--COLOR_CARD) !important;
-        font-family: arial,sans-serif!important;
-        overflow-x: hidden!important;
-        -webkit-font-smoothing: antialiased!important;
-        -moz-osx-font-smoothing: grayscale!important;
+        color: var(--COLOR_TEXT);
+        background-color: var(--COLOR_CARD);
+        font-family: arial,sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     /* width */
