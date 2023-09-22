@@ -34,7 +34,6 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    max-height: -webkit-fill-available;
   }
 
   /* width */
