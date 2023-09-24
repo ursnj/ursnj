@@ -11,7 +11,6 @@ const Projects = () => {
       </div>
       <div className="font-bold mb-3">Responsibilities</div>
       <ul className="list-disc pl-5 leading-relaxed mb-3">
-        <li>Leading a team of 10 people for handling development and testing activities.</li>
         <li>Participating in PLT meetings to gather requirements from Different stakeholders.</li>
         <li>Designing new components and Creating POC’s for the Upcoming feature developments.</li>
         <li>Integrating and managing Company SSO to avoid custom user authentication and authorizations.</li>
