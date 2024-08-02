@@ -1,0 +1,16 @@
+name: Publish docker images
+on:
+  [workflow_dispatch]
+
+jobs:
+  publish_images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Build & Publish Image
+        working-directory: ./
+        run: |
+          docker login -u ursnj -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker build -t ursnj/ursnj:latest .
+          docker push ursnj/ursnj:latest
