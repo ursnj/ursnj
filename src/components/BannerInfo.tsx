@@ -15,63 +15,56 @@ const BannerInfo = () => {
 
   return (
     <div>
-      <NDialog isOpen={showDetails} closeModal={() => setShowDetails(false)} size={Size.MD} title="More Details">
+      <NDialog isOpen={showDetails} onClose={() => setShowDetails(false)} size={Size.MD} title="More Details">
         <Details />
       </NDialog>
-      <NDialog isOpen={showProjects} closeModal={() => setShowProjects(false)} size={Size.MD} title="Projects">
+      <NDialog isOpen={showProjects} onClose={() => setShowProjects(false)} size={Size.MD} title="Projects">
         <Projects />
       </NDialog>
       <div className="text-4xl mb-5">Hello World 👋.</div>
       <div className="text-xl leading-relaxed mb-5">
-        I'm <NLink>Niranjan Devasani.</NLink> a tech enthusiast with a diverse skill set. I specialize in developing web and mobile applications,
-        ensuring seamless user experiences. As a Cloud and DevOps Engineer, I optimize applications for scalability and reliability in the cloud. I'm
-        also passionate about open source, actively contributing to the community. Most notably, I'm the creator of{' '}
-        <a href="https://nayanui.com" target="_blank" className="text-primary">
-          Nayan UI
-        </a>
-        , a dynamic and innovative user interface that's setting new standards in design and functionality. 🔥
+        I'm <NLink>Niranjan Devasani.</NLink>, a tech enthusiast with a wide range of skills. I develop web and mobile apps, focusing on smooth user
+        experiences. As a Cloud and DevOps Engineer, I make sure apps run efficiently in the cloud. I also love contributing to open-source projects.
+        I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React component library and Devtools. and{' '}
+        <NLink href="https://www.inyter.com">Inyter</NLink>, a platform for animated advertisements, invitations, and wishes. 🔥
       </div>
       <div className="flex flex-row mb-6">
-        <a
+        <NLink
           href="https://github.com/ursnj"
           target="_blank"
           className="bg-gray-500 hover:bg-gray-600 text-white p-3 rounded-full cursor-pointer mr-3"
-          tabIndex={0}
           title="Niranjan Devasani Github">
           <Github className="w-5 h-5" />
-        </a>
-        <a
+        </NLink>
+        <NLink
           href="https://www.linkedin.com/in/ursnj/"
           target="_blank"
           className="bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full cursor-pointer mr-3"
-          tabIndex={0}
           title="Niranjan Devasani Linkedin">
           <Linkedin className="w-5 h-5" />
-        </a>
-        <a
+        </NLink>
+        <NLink
           href="https://twitter.com/ursNjn"
           target="_blank"
           className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full cursor-pointer mr-3"
           tabIndex={0}
           title="Niranjan Devasani Twitter">
           <Twitter className="w-5 h-5" />
-        </a>
-        <a
+        </NLink>
+        <NLink
           href="mailto:niranjan.devasani@gmail.com"
           target="_blank"
           className="bg-red-500 hover:bg-red-600 text-white p-3 rounded-full cursor-pointer mr-3"
-          tabIndex={0}
           title="Niranjan Devasani Email">
           <Mail className="w-5 h-5" />
-        </a>
-        <a
+        </NLink>
+        <NLink
           href="tel:+917676677541"
           target="_blank"
           className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full cursor-pointer mr-3"
-          tabIndex={0}
           title="Niranjan Devasani Mobile">
           <Phone className="w-5 h-5" />
-        </a>
+        </NLink>
       </div>
       <div className="flex flex-row items-center">
         <NButton className="mr-3" onClick={() => setShowDetails(true)}>
