@@ -8,8 +8,9 @@
 
 
     <url>
-        <loc>https://ursnj.com/</loc>
-        <lastmod>2023-09-18T04:42:56+00:00</lastmod>
+        <loc>https://www.ursnj.com/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
     </url>
 
 

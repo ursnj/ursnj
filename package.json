@@ -7,7 +7,8 @@
     "start": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sitemaper": "npx sitemaper generate -w http://localhost:3000 -o ./public/sitemap.xml -r https://www.ursnj.com"
   },
   "dependencies": {
     "nayan": "^2.19.0",
