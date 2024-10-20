@@ -23,7 +23,7 @@ const BannerInfo = () => {
       </NDialog>
       <div className="text-4xl mb-5">Hello World 👋.</div>
       <div className="text-xl leading-relaxed mb-5">
-        I'm <NLink>Niranjan Devasani.</NLink>, a tech enthusiast with a wide range of skills. I develop web and mobile apps, focusing on smooth user
+        I'm <NLink>Niranjan Devasani</NLink>, a tech enthusiast with a wide range of skills. I develop web and mobile apps, focusing on smooth user
         experiences. As a Cloud and DevOps Engineer, I make sure apps run efficiently in the cloud. I also love contributing to open-source projects.
         I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React component library and Devtools. and{' '}
         <NLink href="https://www.inyter.com">Inyter</NLink>, a platform for creating animated invitations and wishes videos. 🔥
@@ -44,7 +44,7 @@ const BannerInfo = () => {
           <Linkedin className="w-5 h-5" />
         </NLink>
         <NLink
-          href="https://twitter.com/ursNjn"
+          href="https://twitter.com/ursnjn"
           target="_blank"
           className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full cursor-pointer mr-3"
           tabIndex={0}
