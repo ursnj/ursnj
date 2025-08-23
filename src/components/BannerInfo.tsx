@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Github, Linkedin, Mail, MoonStar, Phone, Sun, Twitter } from 'lucide-react';
-import { NButton, NDialog, NLink, Size, THEMES, useLocalStorage } from 'nayan';
+import { NButton, NDialog, NLink, THEMES } from '@nayan-ui/react';
 import Details from './Details';
 import Projects from './Projects';
 
 const BannerInfo = () => {
   const [showDetails, setShowDetails] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
-  const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
+  const [theme, setTheme] = useState(THEMES.LIGHT);
 
   const toggleTheme = () => {
     setTheme(theme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK);
@@ -15,18 +15,18 @@ const BannerInfo = () => {
 
   return (
     <div>
-      <NDialog isOpen={showDetails} onClose={() => setShowDetails(false)} size={Size.MD} title="More Details">
+      <NDialog isOpen={showDetails} onClose={() => setShowDetails(false)} title="More Details">
         <Details />
       </NDialog>
-      <NDialog isOpen={showProjects} onClose={() => setShowProjects(false)} size={Size.MD} title="Projects">
+      <NDialog isOpen={showProjects} onClose={() => setShowProjects(false)} title="Projects">
         <Projects />
       </NDialog>
       <div className="text-4xl mb-5">Hello World 👋.</div>
       <div className="text-xl leading-relaxed mb-5">
         I'm <NLink>Niranjan Devasani</NLink>, a tech enthusiast with a wide range of skills. I develop web and mobile apps, focusing on smooth user
         experiences. As a Cloud and DevOps Engineer, I make sure apps run efficiently in the cloud. I also love contributing to open-source projects.
-        I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React component library and Devtools. and{' '}
-        <NLink href="https://www.inyter.com">Inyter</NLink>, a platform for creating animated invitations and wishes videos. 🔥
+        I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React & react Native component library and
+        Devtools. 🔥
       </div>
       <div className="flex flex-row mb-6">
         <NLink
@@ -73,9 +73,9 @@ const BannerInfo = () => {
         <NButton className="mr-3" onClick={() => setShowProjects(true)}>
           PROJECTS
         </NButton>
-        <NButton className="mr-2" onClick={() => window.open(`${window.location.href}niranjan-devasani-resume.pdf`)}>
-          RESUME
-        </NButton>
+        {/*<NButton className="mr-2" onClick={() => window.open(`${window.location.href}niranjan-devasani-resume.pdf`)}>*/}
+        {/*  RESUME*/}
+        {/*</NButton>*/}
         <span tabIndex={0} className="cursor-pointer" onClick={toggleTheme} title="Theme Switch">
           {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 m-2 text-text inline" />}
           {theme === THEMES.DARK && <Sun className="w-6 h-6 m-2 text-text inline" />}

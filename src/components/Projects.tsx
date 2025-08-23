@@ -1,4 +1,4 @@
-import { NDivider } from 'nayan';
+import { NDivider } from '@nayan-ui/react';
 
 const Projects = () => {
   return (
