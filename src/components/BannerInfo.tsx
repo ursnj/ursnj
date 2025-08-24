@@ -25,8 +25,7 @@ const BannerInfo = () => {
       <div className="text-xl leading-relaxed mb-5">
         I'm <NLink>Niranjan Devasani</NLink>, a tech enthusiast with a wide range of skills. I develop web and mobile apps, focusing on smooth user
         experiences. As a Cloud and DevOps Engineer, I make sure apps run efficiently in the cloud. I also love contributing to open-source projects.
-        I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React component library and Devtools. and{' '}
-        <NLink href="https://www.inyter.com">Inyter</NLink>, a platform for creating animated invitations and wishes videos. 🔥
+        I created <NLink href="https://www.nayanui.com">Nayan UI</NLink>, a dynamic and innovative React component library and Devtools. 🔥
       </div>
       <div className="flex flex-row mb-6">
         <NLink
