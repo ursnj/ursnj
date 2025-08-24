@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { NTheme, useLocalStorage, THEMES } from 'nayan';
 import BannerImage from './components/BannerImage';
 import BannerInfo from './components/BannerInfo';
+import 'nayan/dist/style.css';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
